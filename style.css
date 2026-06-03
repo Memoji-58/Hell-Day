@@ -1,3 +1,105 @@
 * {
     margin: 0px;
 }
+
+/* ARTICLE2 CSS  */
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.article-header {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.article-header h1 {
+    color: #f1c953;
+    margin-bottom: 18px;
+}
+
+.article-description {
+    color: var(--color-font-main);
+    font-size: 1.75rem;
+    max-width: 900px;
+    line-height: 110%;
+    margin-bottom: 36px;
+}
+
+.article-subtitle{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.article-meta {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.article-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 1;
+    color: var(--color-font-main);
+}
+
+.article-intro {
+    font-weight: 400;
+    line-height: 120%;
+    color: #3D3D3D;
+    margin-top: 40px;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    max-width: 1200px;   
+}
+
+.author-card {
+    background-color: var(--color-link);
+    border-radius: 30px;
+    grid-column: 2;
+    grid-row: 1;
+    padding: 1rem;
+    text-align: center;
+    width: 280px;
+    align-self: start;
+}
+
+.author-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author-card h6 {
+    font-size: 18px;
+    gap: 8x;
+    font-weight: 700;
+}
+
+.author-role {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    font-family: 'Arima' ;
+    text-align: center;
+}
+
+.author-bio {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: start;
+    max-width: 1440px;
+}
