@@ -1,0 +1,39 @@
+:root {
+
+    /*COLORS*/
+
+    --color-primary: #4ea487;
+    --color-primary-hover: #1d4ed8;
+
+    --color-secondary: #f1c953;
+    --color-font-secondary: #ffffff;
+
+    --color-nav: #fffcfc;
+    --color-font-main: #54360d;
+    --color-summary: #cab575fb;
+
+    --color-link: #4ea487;
+
+  
+
+    /* SPACING*/
+
+    --spacing-xs: 8px;
+    --spacing-sm: 16px;
+    --spacing-md: 32px;
+    --spacing-lg: 64px;
+    --spacing-xl: 72px;
+
+
+    /*BORDER RADIUS*/
+
+    --radius-sm: 12px;
+    --radius-md: 40px;
+    --radius-lg: 50px;
+
+
+    /*TRANSITIONS*/
+
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+}

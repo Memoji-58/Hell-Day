@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+
+/*FONTS*/
+
+@font-face {
+    font-display: swap;
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/arima-v7-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/palanquin-v17-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Palanquin Dark';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/palanquin-dark-v17-latin-regular.woff2') format('woff2');
+}
+
+
+/* BASE TYPOGRAPHY*/
+
+body {
+    font-family: 'Palanquin';
+    color: var(--color-font-main);
+    line-height: 1;
+}
+
+
+/* HEADINGS */
+
+
+h1 {
+    font-family: 'Arima';
+    font-size: 64px;
+
+}
+
+h2 {
+    font-family: 'Arima';
+    font-size: 60px;
+    
+
+}
+
+h3 {
+    font-family: 'Arima' ;
+    font-size: 52px;
+    color: var(--color-primary)
+   
+}
+
+h4 {
+    font-family: 'Palanquin Dark';
+    font-size: 48px;
+}
+
+h5 {
+    font-size: 32px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+
+/*TEXT*/
+
+
+p {
+    font-size: 24px;
+    line-height: 110%;
+    
+}
+
+
+
+/*LINKS & LISTS */
+
+a {
+    color: white;
+    text-decoration: none;
+   
+}
+
+li {
+    font-family: 'Arima';
+    font-size: 24px;
+}
+
