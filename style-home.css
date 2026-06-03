@@ -1,0 +1,73 @@
+.head {
+    width: 100%;
+}
+
+.head-img {
+    position: relative;
+    width: 100%;
+    height: 547px;
+}
+
+.head-img-right {
+    position: absolute;
+    z-index: 1;
+
+    width: 100%;
+    height: 515px;
+
+    background-image: url(./img/Header.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.head-img-left {
+    position: absolute;
+    z-index: 2;
+
+    width: 647px;
+    height: 541px;
+
+    background-image: url(./icon/txt.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 104px;
+}
+
+
+.head-img-left article {
+    max-width: 400px;
+}
+
+.head-img-left h2 {
+    margin-bottom: 32px;
+}
+
+.head-img-left p {
+    line-height: 110%;
+}
+
+
+
+
+
+/* Responsive-beta (um content begrenzung zu testen */
+
+@media screen and (min-width: 1920px) {
+.head{
+    padding: 0 max(calc(50% - 720px));
+}
+}
+.nav-bar {
+    padding: 0 max(calc(50% - 720px));
+    height: 128px;
+}
+
+footer {
+    padding: 0 max(calc(50% - 720px));
+    height: 128px;
+}

@@ -1,0 +1,52 @@
+
+ /* das ist der nav Jungs :) */
+
+.nav-bar {
+display: flex;
+align-items: center;
+padding: 32px 146px;
+background-color: var(--color-primary);
+justify-content: flex-start;
+}
+
+.logo {
+padding: 0 100px;
+}
+
+.nav-main ul {
+display: flex;
+list-style: none;
+gap: var(--spacing-xl);
+padding: 0;
+}
+
+.nav-main ul li a {
+color: var(--color-nav);
+text-decoration: none;
+}
+
+/* und hier ist der footer */
+
+footer {
+background-color: var(--color-primary);
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 60px 120px;
+}
+
+.footer-left {
+color: white;
+display: flex;
+gap: var(--spacing-xl);
+height: 20px;
+}
+
+.footer-left div {
+margin-right: -66px;
+}
+
+.footer-right {
+display: flex;
+gap: var(--spacing-sm);
+}
