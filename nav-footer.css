@@ -13,7 +13,7 @@ justify-content: flex-start;
 }
 
 .logo {
-padding: 0 100px 0 0;
+padding: 0 100px;
 }
 
 .nav-main ul {
@@ -67,4 +67,8 @@ footer {
     padding: 0 max(calc(50% - 720px));
     height: 128px;
 }
+}
+
+.logo {
+    padding: 0 100px 0 0;
 }

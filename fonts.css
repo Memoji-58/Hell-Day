@@ -99,3 +99,7 @@ li {
     font-size: 24px;
 }
 
+li :hover {
+color: var(--color-secondary);
+
+}
