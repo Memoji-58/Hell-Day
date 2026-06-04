@@ -1,8 +1,19 @@
-* {
+ * {
     margin: 0px;
 }
 
 /* ARTICLE2 CSS  */
+
+.nav-main a {
+    color: var(--color-nav);
+    transition: var(--transition-normal);
+}
+
+.nav-main a:hover {
+    color: var(--color-secondary);
+    text-decoration: underline;
+    text-shadow: 0 0 15px var(--color-summary);
+}
 
 article {
     display: grid;
@@ -11,7 +22,8 @@ article {
     gap: 1rem;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 2rem;
+    /* padding: 2rem; */
+    margin-top: 48px;
 }
 
 .article-header {
@@ -38,6 +50,7 @@ article {
     font-size: 2.5rem;
     font-weight: 600;
     color: var(--color-primary);
+    margin-bottom: 8px;
 }
 
 .article-meta {
@@ -61,7 +74,7 @@ article {
     margin-top: 40px;
     grid-column: 1 / -1;
     grid-row: 2;
-    max-width: 1200px;   
+    max-width: 1200px;  
 }
 
 .author-card {
@@ -80,6 +93,7 @@ article {
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
+    margin-bottom: 12px; 
 }
 
 .author-card h6 {
@@ -102,4 +116,186 @@ article {
     line-height: 120%;
     text-align: start;
     max-width: 1440px;
+}
+
+#media video{
+    width: 930px;
+    height: 520px;
+    border-radius: 50px;
+    display: block;
+    gap: 10px;
+    transition: var(--transition-normal);
+    border: 2px solid transparent;
+}
+
+#media video:hover {
+    transform: scale(0.95);
+    transform: translateY(-10px);
+    box-shadow: 5px 5px 30px var(--color-secondary);
+}
+
+#media {
+    display: flex;
+    justify-content: center;
+    margin: 140px 370px;
+    padding-right: 200px;
+}
+
+.article-content p {
+    font-size: 24px;
+    line-height: 120%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    color: #3D3D3D;
+}
+
+.article-content .list-intro {
+    font-size: 24px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.article-content ul {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 0 1rem 0 3.5rem;
+    color: #3D3D3D;
+}
+
+.article-content ul li::marker {
+    font-size: 14px;
+    align-items: center;
+}
+
+.article-content .list-outro{
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.pro-tipps {
+    padding: 20px;
+    position: relative;
+    margin: 60px auto;
+    max-width: 1134px;
+    max-height: 260px;
+    margin-top: 100px;
+}
+
+.pro-tipps-header {
+    position: absolute;
+    top: -15px;
+    left:-30px;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    padding: 4px 12px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transform: rotate(-15deg);
+}
+
+.pro-tipps-header img {
+    width: 40px;
+}
+
+.pro-tipps-list {
+    max-width: 1083px;
+    padding: 26px 16px;
+    background-color: #4EA48733;
+    padding-top: 30px;
+    border-radius: 30px;
+}
+
+.pro-tipps-list ol {
+    color: #3D3D3D;
+}
+
+.pro-tipps-list ol li {
+    font-weight:400;
+}
+
+.useful-link {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.share {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 160px auto 50px auto;
+    max-width: 500px;
+}
+
+.share-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 8px;
+}
+
+.share p {
+    position: relative;
+    text-align: center;
+    font-family: 'Arima';
+    font-weight: 500;
+    top: -80px;
+    margin-left: 60px;
+}
+
+.share-arrow {
+    position: absolute;
+    left: -120px; 
+    bottom: 30px;
+    width: 100px;
+}
+
+.share button {
+    position: relative;
+    top: -30px;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border: none;
+    font-family: 'Arima';
+    max-height: 48px;
+    font-weight: 700;
+    font-size: 24px;
+    border-radius: 40px;
+    padding: 10px 24px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: var(--transition-normal);
+}
+
+.share button:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    box-shadow: 0 0 15px var(--color-primary);
+}
+
+.icon-hover {
+    display: none;
+    width: 32px;
+}
+
+.share button:hover .icon-default {
+    display: none;
+}
+
+.share button:hover .icon-hover {
+    display: inline-block;
+    width: 25px !important;
+    height: 25px !important;
+}
+
+.share button img {
+    width: 32px;
 }
