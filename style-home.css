@@ -78,6 +78,38 @@ padding: 8px;
 
 
 
+.faq-container {
+font-size: 24px;
+margin-bottom: 32px;
+padding: 11px 14px 14px 16px;
+border-radius: var(--radius-sm);
+background-color: var(--color-secondary);
+transition: var(--transition-normal);
+}
+
+.faq-container p {
+padding: 5px 10px 10px 10px;
+background-color: var(--color-summary);
+text-align: center;
+border-radius: var(--radius-sm);
+font-size: 16px;
+}
+
+summary {
+display: flex;
+justify-content: space-between;
+align-items: center;
+list-style: none;
+background-color: var(--color-secondary);
+}
+
+details[open] .arrow {
+transition: ease-in-out 0.3s;
+transform: rotate(180deg);
+}
+
+
+
 
 /* Responsive-beta (um content begrenzung zu testen */
 
@@ -90,3 +122,4 @@ padding: 8px;
 main {
     padding: 0 max(calc(50% - 600px));
 }
+
