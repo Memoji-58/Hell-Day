@@ -99,7 +99,7 @@ li {
     font-size: 24px;
 }
 
-li :hover {
-color: var(--color-secondary);
+ul  :hover {
+color: var(--color-primary-hover) !important;
 
 }
