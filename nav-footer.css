@@ -13,7 +13,7 @@ justify-content: flex-start;
 }
 
 .logo {
-padding: 0 100px;
+padding: 0 100px 0 0;
 }
 
 .nav-main ul {
@@ -52,4 +52,19 @@ margin-right: -66px;
 .footer-right {
 display: flex;
 gap: var(--spacing-sm);
+}
+
+/* Responsive-beta (um content begrenzung zu testen */
+
+@media screen and (min-width: 1920px) {
+
+.nav-bar {
+    padding: 0 max(calc(50% - 720px));
+    height: 128px;
+}
+
+footer {
+    padding: 0 max(calc(50% - 720px));
+    height: 128px;
+}
 }
