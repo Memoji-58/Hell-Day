@@ -98,3 +98,58 @@ article {
     text-align: start;
     max-width: 1440px;
 }
+
+.container {
+    width: 760px;
+    margin: 0 auto;
+    padding: 35px 40px 60px;
+}
+
+.text-block {
+    margin-bottom: 40px;
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+}
+
+.text-block p {
+    font-size: 24px;
+    color: #3D3D3D;
+    text-align: center;
+}
+
+h5 {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.image-card {
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.image-card img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    margin-bottom: 45px;
+}
+
+.column p {
+    font-size: 13px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.article {
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+
+}
