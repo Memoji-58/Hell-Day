@@ -19,7 +19,19 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+
+    animation: brain-fu-two 5s ease-in-out; 
 }
+
+
+@keyframes brain-fu-two {
+10%{ transform: translatex(-500px) rotate(0deg) scaleX(2) scaleY(2);}
+25%{ transform: translateY(-100px) rotate(-30deg) scaleX(100%) scaleY(100%);}
+75%{ transform: translatex(800px) rotate(-180deg) scaleX(1) scaleY(1);}
+100% { transform: translateY(0px) rotate(0deg) scaleX(1) scaleY(1);}
+
+}
+
 
 .head-img-left {
     position: absolute;
@@ -36,7 +48,19 @@
     align-items: center;
 
     padding-left: 104px;
+ 
+    animation: brain-fu 5s ease-in-out forwards;
+
 }
+
+@keyframes brain-fu {
+10%{ transform: translatex(500px) rotate(0deg) scaleX(2) scaleY(2);}
+25%{ transform: translateY(100px) rotate(30deg) scaleX(100%) scaleY(100%);}
+75%{ transform: translatex(-800px) rotate(180deg) scaleX(1) scaleY(1);}
+100% { transform: translateY(0px) rotate(0deg) scaleX(1) scaleY(1);}
+
+}
+
 
 
 .head-img-left article {
@@ -51,17 +75,40 @@
     line-height: 110%;
 }
 
+
+.circle {
+    position: absolute;
+    z-index: 3;
+    top: 280px;
+left: 433px;
+    animation: spin 20s linear infinite;
+
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+ 
+}
+
 main {
 padding: 749px 360px 0;
 }
 
 .tabs {
 display: flex;
-align-items: baseline;
+align-items: center;
 justify-content: center;
 gap: var(--spacing-xs);
-padding: 88px 0 0 0;
+padding: 88px 0 24px 0;
 }
+
+
 
 .txt-top {
 text-align: center;
@@ -106,6 +153,75 @@ background-color: var(--color-secondary);
 details[open] .arrow {
 transition: ease-in-out 0.3s;
 transform: rotate(180deg);
+}
+
+
+
+.contact {
+    padding: 0 56px 88px 56px;
+}
+
+.contact-top {
+    display: flex;
+    gap: var(--spacing-md);
+    padding: 0 0 17px 0;
+}
+
+.contact-txt,
+textarea,
+input,
+p {
+    width: 100%;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    margin: 0 0 17px 0;
+    outline: none;
+}
+
+.contact-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding-top: 32px;
+}
+
+.contact-bottom p {
+    line-height: 0%;
+    padding: 0;
+    font-size: 15px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.checkbox a {
+    color: var(--color-primary);
+}
+
+.checkbox a:hover {
+    text-decoration: underline;
+    letter-spacing: 1px;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    padding-top: 10px;
+    outline: 1.5px solid black;
+}
+
+button {
+    font-family: 'Arima';
+    font-size: 24px;
+    background-color: transparent;
+    border-radius:var(--radius-md);
+    padding: 0 24px;
+    border: 1px solid gray;
 }
 
 
