@@ -18,8 +18,21 @@
     background-image: url(./img/Header.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
+
+    animation: brain-fu-two 5s ease-in-out; 
 }
+
+
+@keyframes brain-fu-two {
+0%{ transform: translatex(500px) rotate(0deg) scale(0);}
+25%{ transform: translatex(600px) rotate(0deg) scaley(1) ;}
+75%{ transform:  translatex(400px) rotate(0deg) scaley(1);}
+100% { transform: translatex(0px) rotate(0deg) scale(1);}
+
+
+}
+
 
 .head-img-left {
     position: absolute;
@@ -36,7 +49,19 @@
     align-items: center;
 
     padding-left: 104px;
+ 
+    animation: brain-fu 5s ease-in-out forwards;
+
 }
+
+@keyframes brain-fu {
+0%{ transform: translatex(500px) rotate(0deg) scale(2);}
+25%{ transform: translatex(600px) rotate(0deg) scale(1);}
+75%{ transform: translatex(400px) rotate(0deg) scale(1);}
+100% { transform: translatex(0px) rotate(0deg) scale(1);}
+
+}
+
 
 
 .head-img-left article {
@@ -51,17 +76,51 @@
     line-height: 110%;
 }
 
+
+.circle {
+    position: absolute;
+    z-index: 3;
+    top: 280px;
+left: 433px;
+    animation: spin 20s linear infinite,
+           vorher 5.5s linear, forwards
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+ 
+}
+
+
+@keyframes vorher {
+
+    0%{  transform: rotate(0deg)  translateY(-600px)  scale(10%);}
+    25%{  transform: rotate(0deg) translateY(-400px)  scale(20%);}
+    55%{  transform: rotate(0deg) translateY(200px)  scale(50%);}
+80%{ transform: rotate(360deg) translate(0px) scale(1);}
+
+to{  transform:  rotate(360deg) scale(1);}
+}
+
 main {
-padding: 749px 360px 0;
+padding: 0 24px ;
 }
 
 .tabs {
 display: flex;
-align-items: baseline;
+align-items: center;
 justify-content: center;
 gap: var(--spacing-xs);
-padding: 88px 0 0 0;
+padding: 88px 0 24px 0;
 }
+
+
 
 .txt-top {
 text-align: center;
@@ -78,15 +137,135 @@ padding: 8px;
 
 
 
+.faq-container {
+font-size: 24px;
+margin-bottom: 32px;
+padding: 11px 14px 14px 16px;
+border-radius: var(--radius-sm);
+background-color: var(--color-secondary);
+transition: var(--transition-normal);
+}
+
+.faq-container p {
+padding: 5px 10px 10px 10px;
+background-color: var(--color-summary);
+text-align: center;
+border-radius: var(--radius-sm);
+font-size: 16px;
+}
+
+summary {
+display: flex;
+justify-content: space-between;
+align-items: center;
+list-style: none;
+background-color: var(--color-secondary);
+}
+
+details[open] .arrow {
+transition: ease-in-out 0.3s;
+transform: rotate(180deg);
+}
+
+
+
+.contact {
+    padding: 0 56px 88px 56px;
+}
+
+.contact-top {
+    display: flex;
+    gap: var(--spacing-md);
+    padding: 0 0 17px 0;
+}
+
+.contact-txt,
+textarea,
+input,
+p {
+    width: 100%;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    margin: 0 0 17px 0;
+    outline: none;
+}
+
+.contact-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-md);
+     padding: 32px 0 120px 0;
+}
+
+.contact-bottom p {
+    line-height: 0%;
+    padding: 0;
+    font-size: 15px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.checkbox a {
+    color: var(--color-primary);
+}
+
+.checkbox a:hover {
+    text-decoration: underline;
+    letter-spacing: 1px;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    padding-top: 10px;
+    outline: 1.5px solid black;
+}
+
+button {
+    font-family: 'Arima';
+    font-size: 24px;
+    background-color: transparent;
+    border-radius:var(--radius-md);
+    padding: 0 24px;
+    border: 1px solid gray;
+}
+
+
+
 
 /* Responsive-beta (um content begrenzung zu testen */
 
 @media screen and (min-width: 1920px) {
 .head{
-    padding: 0 max(calc(50% - 720px));
+    padding: 0 max(calc(50% - 720px), 24px);
+}
+
+
+main {
+    padding: 0 max(calc(50% - 600px), 24px);
 }
 }
 
-main {
-    padding: 0 max(calc(50% - 600px));
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+
+.txt-img{
+    width: 80%;
+    margin: 54px 0 0 38px;;
 }
+
+.head-img-left{
+height: 100%;
+overflow: scroll;
+}
+
+.head-img-left{
+    background-image: 222px 2300px;
+}
+}
+    

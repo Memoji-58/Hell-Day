@@ -1,12 +1,12 @@
-
 article {
     display: grid;
     grid-template-columns: 1fr 300px;
     grid-template-rows: auto auto;
     gap: 1rem;
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .article-header {
@@ -14,6 +14,8 @@ article {
     flex-direction: column;
     grid-column: 1;
     grid-row: 1;
+
+    /* gap: 20px; */
 }
 
 .article-header h1 {
@@ -29,7 +31,7 @@ article {
     margin-bottom: 36px;
 }
 
-.article-subtitle{
+.article-subtitle {
     font-size: 2.5rem;
     font-weight: 600;
     color: var(--color-primary);
@@ -56,7 +58,7 @@ article {
     margin-top: 40px;
     grid-column: 1 / -1;
     grid-row: 2;
-    max-width: 1200px;   
+    max-width: 1200px;
 }
 
 .author-card {
@@ -87,7 +89,7 @@ article {
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 12px;
-    font-family: 'Arima' ;
+    font-family: 'Arima';
     text-align: center;
 }
 
@@ -97,4 +99,271 @@ article {
     line-height: 120%;
     text-align: start;
     max-width: 1440px;
+}
+
+/*Slider*/
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+     margin-top: 88px;
+    margin-bottom: 88px;
+
+}
+
+h5 {
+    text-align: center;
+}
+
+.slider_b {
+    height: 300px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    /* gap: 10px; */
+}
+
+.slider_b_element {
+
+    z-index: 1;
+    width: 220px;
+    height: 100%;
+
+    border-radius: var(--radius-sm);
+
+
+    box-shadow: 0px 2px 1px rgba(3, 7, 18, 0.02),
+        0px 8px 5px rgba(3, 7, 18, 0.04),
+        0px 18px 11px rgba(3, 7, 18, 0.06),
+        0px 32px 19px rgba(3, 7, 18, 0.08);
+
+
+    /*  background-color: rgb(5, 89, 234);*/
+
+
+    transform: perspective(250px) rotateY(20deg) translateX(-20px);
+    transform-origin: 50% 50%;
+
+    transition: all 250ms ease-in-out;
+}
+
+.slider_b_one {
+    background-image: url(./img/slider_pic_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider_b_two {
+    background-image: url(./img/slider_pic_2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider_b_three {
+    background-image: url(./img/slider_pic_3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider_b_four {
+    background-image: url(./img/slider_pic_4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider_b_five {
+    background-image: url(./img/slider_pic_5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider_b_element:hover {
+    z-index: 2;
+    background-color: aqua;
+    transform: perspective(250px) rotateY(0deg) translateX(-20px) scaleX(1.5) scaleY(1.2);
+}
+
+.slider_b_element:hover~.slider_b_element {
+    background-color: brown;
+    transform: perspective(250px) rotateY(-20deg) translateX(-20px);
+}
+
+/*Artikel*/
+
+.article-content p {
+    font-size: 24px;
+    line-height: 120%;
+    max-width: 1201px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    color: #3D3D3D;
+}
+
+.article-content .list-intro {
+    max-width: 1000px;
+    font-size: 24px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.article-content ol {
+    margin: 0 auto;
+    max-width: 1000px;
+    /* padding: 0 1rem 0 3.5rem;*/
+    color: #3D3D3D;
+}
+
+.article-content ol li::marker {
+    /*font-size: 14px;*/
+    align-items: center;
+}
+
+.article-content .list-outro {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+/*Pro Tipps*/
+.pro-tipps {
+    padding: 20px;
+    position: relative;
+    margin: 60px auto;
+    max-width: 1134px;
+    max-height: 260px;
+    margin-top: 100px;
+}
+
+.pro-tipps-header {
+    position: absolute;
+    top: -15px;
+    left: -30px;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    padding: 4px 12px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transform: rotate(-15deg);
+}
+
+.pro-tipps-header img {
+    width: 40px;
+}
+
+.pro-tipps-header p {
+    color: var(--color-secondary);
+    font-weight: 600;
+}
+
+.pro-tipps-list {
+    max-width: 1083px;
+    padding: 26px 16px;
+    background-color: #4EA48733;
+    padding-top: 30px;
+    border-radius: 30px;
+}
+
+.pro-tipps-list ol {
+    color: #3D3D3D;
+}
+
+.pro-tipps-list ol li {
+    font-weight: 400;
+}
+
+.useful-link {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.share {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 160px auto 50px auto;
+    max-width: 500px;
+}
+
+.share-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 8px;
+}
+
+.share p {
+    position: relative;
+    text-align: center;
+    font-family: 'Arima';
+    font-weight: 500;
+    top: -80px;
+    margin-left: 60px;
+}
+
+.share-arrow {
+    position: absolute;
+    left: -120px;
+    bottom: 30px;
+    width: 100px;
+}
+
+.share button {
+    position: relative;
+    top: -30px;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border: none;
+    font-family: 'Arima';
+    max-height: 48px;
+    font-weight: 700;
+    font-size: 24px;
+    border-radius: 40px;
+    padding: 10px 24px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: var(--transition-normal);
+}
+
+.share button:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    box-shadow: 0 0 15px var(--color-primary);
+}
+
+.icon-hover {
+    display: none;
+    width: 32px;
+}
+
+.share button:hover .icon-default {
+    display: none;
+}
+
+.share button:hover .icon-hover {
+    display: inline-block;
+    width: 25px !important;
+    height: 25px !important;
+}
+
+.share button img {
+    width: 32px;
 }
