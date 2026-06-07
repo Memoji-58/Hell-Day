@@ -104,3 +104,61 @@ ul  :hover {
 color: var(--color-primary-hover) !important;
 
 }
+
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1300px)
+{}
+
+
+@media screen and (min-width: 320px) and (max-width: 768px)
+{
+
+h1 {
+    font-family: 'Arima';
+    font-size: 64px;
+
+}
+
+h2 {
+    font-family: 'Arima';
+    font-size: 60px;
+    
+
+}
+
+h3 {
+    font-family: 'Arima' ;
+    font-size: 52px;
+    color: var(--color-primary)
+   
+}
+
+h4 {
+    font-family: 'Palanquin Dark';
+    font-size: 48px;
+}
+
+h5 {
+    font-family: 'Arima' ;
+    font-size: 32px;
+}
+
+h6 {
+    font-size: 16px;
+    font-family: 'Arima' ;
+}
+
+
+/*TEXT*/
+
+
+p {
+    font-size: 24px;
+    line-height: 110%;
+    
+}
+
+
+}
