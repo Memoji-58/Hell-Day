@@ -131,14 +131,14 @@ h2 {
 
 h3 {
     font-family: 'Arima' ;
-    font-size: 52px;
+    font-size: 40px;
     color: var(--color-primary)
    
 }
 
 h4 {
     font-family: 'Palanquin Dark';
-    font-size: 48px;
+    font-size: 28px;
 }
 
 h5 {
@@ -156,7 +156,7 @@ h6 {
 
 
 p {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 110%;
     
 }
