@@ -60,15 +60,14 @@ article {
     display: flex;
     gap: 1.5rem;
     align-items: center;
-    flex-wrap: nowrap;
-    overflow: hidden;
 }
 
 .article-meta span {
     display: flex;
     align-items: center;
-    gap: 0.4rem;
-    font-size: clamp(0.6rem, 1.2vw, 1rem);
+    width: auto;
+    gap: 6px;
+    font-size:1rem;
     color: var(--color-font-main);
 }
 
@@ -158,13 +157,6 @@ article {
     margin: 0 auto;
     padding: 0 1rem;
     color: #3D3D3D;
-}
-
-.article-content{
-    margin-left: 40px;
-    margin-right: 40px;
-    padding-left: 24px;
-    padding-right: 24px;
 }
 
 .article-content .list-intro {
@@ -329,6 +321,10 @@ article {
 }
 
 @media screen and (max-width: 1050px){
+    article {
+        padding-left: 0;
+        padding-right: 0;
+    }
     .article-subtitle{
         font-size: 2rem;
     }
@@ -343,6 +339,11 @@ article {
 
     .article-intro {
         font-size: 1.5rem;
+    }
+
+    .article-content {
+        margin-left: 0;
+        margin-right: 0;
     }
 
     #media {
@@ -374,18 +375,26 @@ article {
 }
 
 @media screen and (max-width: 768px){
+    body {
+        padding-bottom: 130px;
+    }
     article {
         grid-template-columns: 1fr;
-        padding: 0 20px;
+        margin-top: 100px;   
+    }
+
+    .article-header {
+        margin-left: 16px;
+        margin-right: 16px;
+        grid-column: 1;
     }
 
     .author-card {
         grid-column: 1;
         grid-row: 2;
-        width: 100%;
+        width: 80%;
         margin-right: 20px;
-        margin-left:40px;
-        padding: 16px 8px;
+        margin-left: 40px;
         align-self: center;
         justify-self: center;
     }
@@ -394,6 +403,8 @@ article {
         grid-column: 1;
         grid-row: 3;
         margin-top: 24px;
+        margin-left: 16px;
+        margin-right: 16px;
     }
 
     .article-subtitle {
@@ -415,13 +426,18 @@ article {
         margin-bottom: 16px;
     }
 
+    .article-meta span {
+        font-size: 1rem;
+        width: 45%;
+    }
+
     .article-intro {
         font-size: 16px;
     }
 
     #media {
-        margin-top: 24px;
-        margin-bottom: 24px;
+        margin: 24px auto;
+        padding: 0;
     }
 
     #media video {
@@ -458,7 +474,6 @@ article {
     .pro-tipps-list ol li {
         font-size: 16px;
     }
-
     .share p {
         font-size: 18px;
         margin-left: 0;
@@ -496,7 +511,7 @@ article {
     }
 
     .share {
-        margin: 20px 20px 100px 50px;
+        margin: 30px 50px 100px 50px;
     }
 
     .share button {
@@ -529,10 +544,50 @@ article {
     .author-card {
         margin-right: 0;
     }
+
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
     #media video {
         margin-right: 200px;
     }
+
+    #media {
+        margin-left: 70px;
+    }
+
+    .author-card {
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .share-arrow {
+        left: -60px;
+    }
+
+    .share {
+        margin: 80px 50px 100px 50px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    #media {
+        margin-left: 100px;
+    }
+
+     #media video {
+        width: 280px;
+        height: 170px;
+     }
+
+     .share {
+        margin: 120px 50px 100px 50px;
+     }
+
+     @media screen and (max-width: 350px){
+     .share {
+        margin: 150px 50px 100px 50px;
+     }
+     }
 }
