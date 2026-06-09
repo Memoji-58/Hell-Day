@@ -4,6 +4,10 @@ ICH GLAUBE WIR SOLLTEN ALLE DEN STYLE.CSS UMBENENNEN WEGEN ÜBERSCHNEIDUNGEN UND
 
  /* das ist der nav Jungs :) */
 
+.footer-mobile{
+    display: none;
+}
+
 .nav-bar {
 display: flex;
 align-items: center;
@@ -30,12 +34,18 @@ text-decoration: none;
 
 /* und hier ist der footer */
 
-footer {
+.footer-main {
 background-color: var(--color-primary);
 display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 60px 120px;
+}
+
+.footer-left a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }
 
 .footer-left {
@@ -63,7 +73,7 @@ gap: var(--spacing-sm);
     height: 128px;
 }
 
-footer {
+.footer-main {
     padding: 0 max(calc(50% - 720px));
     height: 128px;
 }
@@ -86,12 +96,18 @@ footer {
 }
 
 .nav-bar{
+   width: 100%;
+   max-width: 991px;
+    left: 0;
+    top: 0;
+    position: fixed;
     justify-content: center;
     align-items: center;
     padding: 10px 0;
+    z-index: 100;
 }
 
-footer{
+.footer-main{
     height: 134px;
 padding: 60px 23px;
 }
@@ -121,6 +137,26 @@ padding: 46px 0 0 8px;
 
     width: 33px;
     height: 24px;
+}
+
+.footer-mobile{
+    width: 100%;
+    display: flex;
+    background-color: var(--color-secondary);
+    height: 88px;
+    position: sticky;
+    align-items: center;
+    bottom: 0;
+    z-index: 99;
+    padding: 48px 0 48px 0;
+}
+
+.mobile-content{
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+width: 100%;   
+
 }
 
 }
