@@ -236,3 +236,215 @@ h5 {
     border: 1px solid var(--color-primary);
     box-shadow: 0 0 15px var(--color-primary);
 }
+
+@media screen and (min-width: 769px) and (max-width: 1300px) {
+
+    article {
+        grid-template-columns: 1fr 260px;
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .article-subtitle {
+        font-size: 2rem;
+    }
+
+    .article-header h1 {
+        font-size: 3rem;
+        line-height: 1.05;
+    }
+
+    .article-description {
+        font-size: 1.4rem;
+        max-width: 100%;
+    }
+
+    .article-meta {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .author-card {
+        width: 100%;
+        max-width: 260px;
+        padding: 1.2rem;
+    }
+
+    .author-card img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .author-role,
+    .author-card h6 {
+        font-size: 1rem;
+    }
+
+    .author-bio {
+        font-size: 0.95rem;
+    }
+
+    .article-intro {
+        font-size: 1.1rem;
+        margin-top: 2rem;
+    }
+}
+
+/* Mobile */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+
+    .two-columns {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .column p {
+        font-size: 18px;
+    }
+
+    .image-card-left,
+    .image-card-right {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border-radius: 30px;
+    }
+
+    .image-card-left img,
+    .image-card-right img {
+        width: 100%;
+        height: auto;
+    }
+
+    h5 {
+        font-size: 1.5rem;
+    }
+    
+    .image-card-top {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto 30px;
+        border-radius: 24px;
+        overflow: hidden;
+    }
+
+    .image-card-top img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .article-header {
+        width: 100%;
+    }
+
+    .article-subtitle {
+        font-size: 1.5rem;
+        line-height: 1.1;
+    }
+
+    .article-header h1 {
+        font-size: 2.4rem;
+        line-height: 1.05;
+        margin-bottom: 1rem;
+    }
+
+    .article-description {
+        font-size: 1.2rem;
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
+    }
+
+    .article-meta {
+        flex-wrap: wrap;
+        gap: 0.8rem;
+    }
+
+    .article-meta span {
+        font-size: 0.95rem;
+    }
+
+    .author-card {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 1.5rem;
+        border-radius: 30px;
+    }
+
+    .author-card img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .author-card h6 {
+        font-size: 1.4rem;
+        margin-top: 1rem;
+    }
+
+    .author-role {
+        font-size: 1rem;
+    }
+
+    .author-bio {
+        font-size: 1.1rem;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .article-intro {
+        margin-top: 0;
+        font-size: 1.1rem;
+    }
+
+    .share {
+        margin: 80px auto 40px;
+        padding: 0 1rem;
+    }
+
+    .share p {
+        top: 0;
+        margin-left: 0;
+        margin-bottom: 20px;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .share-action {
+        position: relative;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .share-arrow {
+        width: 55px;
+        left: -60px;
+        bottom: 35px;
+    }
+
+    .share button {
+        top: 0;
+        margin-left: 0;
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .article-meta {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
