@@ -154,6 +154,7 @@ h5 {
     object-fit: contain;
     display: block;
 }
+
 .two-columns {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 519px));
@@ -446,5 +447,35 @@ h5 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1120px) {
+
+    .two-columns {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .column p {
+        font-size: 18px;
+    }
+
+    .image-card-left,
+    .image-card-right {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border-radius: 30px;
+    }
+
+    .image-card-left img,
+    .image-card-right img {
+        width: 75%;
+        height: auto;
     }
 }
