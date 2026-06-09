@@ -72,3 +72,55 @@ footer {
 .logo {
     padding: 0 100px 0 0;
 }
+
+
+
+@media screen and (min-width: 375px) and (max-width: 991px){
+
+.nav-main{
+    display: none;
+}
+
+.logo{
+    padding: 0;
+}
+
+.nav-bar{
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+footer{
+    height: 134px;
+padding: 60px 23px;
+}
+
+.footer-left{
+    flex-direction: column-reverse;
+    gap: var(--spacing-xs);
+    justify-content: center;
+    
+}
+
+.footer-left a {
+    width: 147px;
+}
+
+.footer-left div{
+   display: flex;
+   align-items: center;
+}
+
+.footer-right{
+padding: 46px 0 0 8px;
+
+}
+
+.footer-right img{
+
+    width: 33px;
+    height: 24px;
+}
+
+}
