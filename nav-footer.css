@@ -8,6 +8,10 @@ ICH GLAUBE WIR SOLLTEN ALLE DEN STYLE.CSS UMBENENNEN WEGEN ÜBERSCHNEIDUNGEN UND
     display: none;
 }
 
+.burger-menu {
+    display: none;
+}
+
 .nav-bar {
 display: flex;
 align-items: center;
@@ -91,6 +95,11 @@ gap: var(--spacing-sm);
     display: none;
 }
 
+.burger-menu {
+    display: block;
+    margin-left: auto;
+}
+
 .logo{
     padding: 0;
 }
@@ -165,6 +174,11 @@ padding: 46px 0 0 8px;
    .nav-main{
     display: none;
   }
+
+  .burger-menu {
+    display: block;
+    margin-left: auto;
+}
 
   .nav-bar {
     padding: 32px 116px;
