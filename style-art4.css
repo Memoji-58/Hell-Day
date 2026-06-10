@@ -2,8 +2,6 @@
     margin: 0px;
 }
 
-/* ARTICLE2 CSS  */
-
 .nav-main a {
     color: var(--color-nav);
     transition: var(--transition-normal);
