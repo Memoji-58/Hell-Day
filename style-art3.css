@@ -75,6 +75,7 @@ article {
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
+    margin-bottom: 10px;
 }
 
 .author-card h6 {
