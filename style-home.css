@@ -257,7 +257,17 @@ main {
 }
 }
 
-@media screen and (min-width: 576px) and (max-width: 767px) {
+@media screen and (min-width: 769px) and (max-width: 1000px) {
+
+    .txt-img{
+        width: 80%;
+    }
+
+
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
 
 .txt-img{
     width: 80%;
@@ -283,7 +293,7 @@ left: 260px;
 
 
 
-@media screen and (min-width: 300px) and (max-width: 576px) {
+@media screen and (min-width: 320px) and (max-width: 600px) {
 .head-img-right{
 background-position-x: 65%;
 
@@ -329,13 +339,14 @@ width: 160px;
     font-size: 10px;
 }
 
+.contact {
+ padding: 0 0 32px 0;
+
+}
+
 .contact-top{
     display: contents;
 }
 
-.contact-bottom{
-
-    padding: 32px 0 32px 0;
-}
 
 }
