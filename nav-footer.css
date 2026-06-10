@@ -12,6 +12,14 @@ ICH GLAUBE WIR SOLLTEN ALLE DEN STYLE.CSS UMBENENNEN WEGEN ÜBERSCHNEIDUNGEN UND
     display: none;
 }
 
+.burger-main {
+    display: none;
+}
+
+.menu-toggle {
+    display: none;
+}
+
 .nav-bar {
     height: 128px;
 display: flex;
@@ -261,4 +269,59 @@ position: fixed;
 
 }
 
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .nav-main {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-primary);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }
+
+  /* OPEN STATE */
+  .menu-toggle:checked ~ .nav-main {
+    display: block;
+  }
+
+  /* UL jetzt vertikal */
+  .nav-main ul {
+    flex-direction: column;
+    display: flex;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Links schöner machen */
+  .nav-main ul li {
+    width: 100%;
+  }
+
+  .nav-main ul li a {
+    display: block;
+    width: 100%;
+    padding: 16px 24px;
+    color: var(--color-nav);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    transition: 0.2s ease;
+  }
+
+  /* Hover / Touch Feedback */
+  .nav-main ul li a:hover {
+    background-color: rgba(255,255,255,0.08);
+  }
+
+  /* Burger sichtbar */
+  .burger-menu {
+    display: block;
+    margin-left: auto;
+    cursor: pointer;
+  }
 }
