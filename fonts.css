@@ -97,7 +97,7 @@ a {
 }
 
 li {
-    font-family: 'Arima';
+    font-family: 'Palanquin';
     font-size: 24px;
 }
 
@@ -143,12 +143,16 @@ h4 {
 
 h5 {
     font-family: 'Arima' ;
-    font-size: 32px;
+    font-size: 20px;
 }
 
 h6 {
     font-size: 16px;
     font-family: 'Arima' ;
+}
+
+li {
+    font-size: 16px;
 }
 
 
