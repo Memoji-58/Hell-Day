@@ -2,8 +2,6 @@
     margin: 0px;
 }
 
-/* ARTICLE2 CSS  */
-
 .nav-main a {
     color: var(--color-nav);
     transition: var(--transition-normal);
@@ -139,7 +137,7 @@ article {
 #media video:hover {
     transform: scale(0.95);
     transform: translateY(-10px);
-    box-shadow: 5px 5px 30px var(--color-secondary);
+    box-shadow: 5px 5px 30px var(--color-primary);
 }
 
 #media {
