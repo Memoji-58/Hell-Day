@@ -501,7 +501,7 @@ article {
     }
 
     .pro-tipps {
-        margin: 60px 20px 0px 20px;
+        margin:  60px 0 0 0;
     }
 
     .share p {
@@ -511,7 +511,7 @@ article {
     }
 
     .share {
-        margin: 30px 50px 100px 50px;
+        margin: 30px 85px 100px 85px;
     }
 
     .share button {
@@ -567,7 +567,7 @@ article {
     }
 
     .share {
-        margin: 80px 50px 100px 50px;
+        margin: 80px 0 100px 0;
     }
 }
 
@@ -582,7 +582,7 @@ article {
      }
 
      .share {
-        margin: 120px 50px 100px 50px;
+        margin: 120px 0 100px 0;
      }
 
      @media screen and (max-width: 350px){

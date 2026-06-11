@@ -21,10 +21,11 @@ ICH GLAUBE WIR SOLLTEN ALLE DEN STYLE.CSS UMBENENNEN WEGEN ÜBERSCHNEIDUNGEN UND
 }
 
 .nav-bar {
+    padding: 0 max(calc(50% - 600px), 24px);
     height: 128px;
 display: flex;
 align-items: center;
-padding: 32px 146px;
+
 background-color: var(--color-primary);
 justify-content: flex-start;
 }
@@ -48,11 +49,12 @@ text-decoration: none;
 /* und hier ist der footer */
 
 .footer-main {
+    padding: 0 max(calc(50% - 600px), 24px);
 background-color: var(--color-primary);
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 60px 120px;
+height: 152px;
 }
 
 .footer-left a {
@@ -82,12 +84,12 @@ gap: var(--spacing-sm);
 @media screen and (min-width: 1920px) {
 
 .nav-bar {
-    padding: 0 max(calc(50% - 720px));
+    padding: 0 max(calc(50% - 600px));
     height: 128px;
 }
 
 .footer-main {
-    padding: 0 max(calc(50% - 720px));
+    padding: 0 max(calc(50% - 600px));
     height: 128px;
 }
 }
@@ -240,13 +242,13 @@ position: fixed;
 }
 
   .footer-right{
-    padding: 46px 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    padding: 52px 0 0 10px;
+    display: flex;
+   
  }
 
  .footer-main {
-    padding: 40px 10px;
+    padding: 40px 24px;
  }
 
  .footer-mobile{
