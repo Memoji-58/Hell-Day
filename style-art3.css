@@ -3,10 +3,10 @@ article {
     display: grid;
     grid-template-columns: 1fr 300px;
     grid-template-rows: auto auto;
-    gap: 1rem;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 2rem;
+    gap: 44px;
+    padding: 0 max(calc(50% - 600px), 24px);
+  
+    margin-top: 48px;
 }
 
 .article-header {
@@ -33,6 +33,7 @@ article {
     font-size: 2.5rem;
     font-weight: 600;
     color: var(--color-primary);
+    margin-bottom: 8px;
 }
 
 .article-meta {
@@ -44,8 +45,9 @@ article {
 .article-meta span {
     display: flex;
     align-items: center;
-    gap: 0.4rem;
-    font-size: 1;
+    width: auto;
+    gap: 6px;
+    font-size:1rem;
     color: var(--color-font-main);
 }
 
@@ -53,10 +55,9 @@ article {
     font-weight: 400;
     line-height: 120%;
     color: #3D3D3D;
-    margin-top: 40px;
     grid-column: 1 / -1;
     grid-row: 2;
-    max-width: 1200px;   
+    max-width: 1200px; 
 }
 
 .author-card {
@@ -68,6 +69,7 @@ article {
     text-align: center;
     width: 280px;
     align-self: start;
+    margin-right: 40px;
 }
 
 .author-card img {
@@ -75,12 +77,12 @@ article {
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 10px;
+    margin-bottom: 12px; 
 }
 
 .author-card h6 {
     font-size: 18px;
-    gap: 8x;
+    gap: 8px;
     font-weight: 700;
 }
 
@@ -172,11 +174,8 @@ h5 {
 .article {
     font-size: 24px;
     line-height: 120%;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 1rem;
     color: #3D3D3D;
-    padding: 2rem;
+    padding: 0 max(calc(50% - 600px), 24px);
 }
 
 .share {
