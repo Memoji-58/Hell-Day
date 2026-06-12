@@ -19,12 +19,10 @@ article {
     display: grid;
     grid-template-columns: 1fr 300px;
     grid-template-rows: auto auto;
-    gap: 1rem;
-    max-width: 1440px;
-    margin: 0 auto;
+    gap: 44px;
+    padding: 0 max(calc(50% - 600px), 24px);
+  
     margin-top: 48px;
-    padding-left: 24px;
-    padding-right: 24px;
 }
 
 .article-header {
@@ -32,8 +30,6 @@ article {
     flex-direction: column;
     grid-column: 1;
     grid-row: 1;
-    margin-left: 40px;
-    margin-right: 40px;
 }
 
 .article-header h1 {
@@ -75,12 +71,9 @@ article {
     font-weight: 400;
     line-height: 120%;
     color: #3D3D3D;
-    margin-top: 40px;
     grid-column: 1 / -1;
     grid-row: 2;
-    max-width: 1200px;  
-    margin-left: 40px;
-    margin-right: 40px;
+    max-width: 1200px; 
 }
 
 .author-card {
@@ -105,7 +98,7 @@ article {
 
 .author-card h6 {
     font-size: 18px;
-    gap: 8x;
+    gap: 8px;
     font-weight: 700;
 }
 
@@ -133,7 +126,7 @@ article {
     gap: 10px;
     transition: var(--transition-normal);
     border: 2px solid transparent;
-    margin-left: 100px;
+    /* margin-left: 100px; */
 }
 
 #media video:hover {
@@ -145,9 +138,11 @@ article {
 #media {
     display: flex;
     justify-content: center;
-    margin-top: 140px;
-    margin-bottom: 140px;
-    padding-right: 200px;
+    padding: 88px max(calc(50% - 445px), 24px);
+}
+
+.article-content{
+    padding: 0 max(calc(50% - 600px), 24px);
 }
 
 .article-content p {
@@ -183,18 +178,22 @@ article {
 }
 
 .pro-tipps {
-    padding: 20px;
-    position: relative;
-    margin: 60px auto;
-    max-width: 1134px;
-    max-height: 260px;
+    display: flex;
+    justify-content: center;
+    padding: 20px 88px;
+    position: relative; 
     margin-top: 100px;
 }
 
 .pro-tipps-header {
-    position: absolute;
-    top: -15px;
-    left:-30px;
+    margin-right: -216px;
+    position: relative;
+    max-width: 196px;
+    min-width: 195px;
+    width: 195px;
+    height: 66px;
+    top: -50px;
+    left:-52px;
     background-color: var(--color-primary);
     color: var(--color-secondary);
     padding: 4px 12px;
@@ -309,21 +308,33 @@ article {
     width: 32px;
 }
 
-@media screen and (max-width: 1230px){
-    #media {
-        margin-right: 100px;
-        margin-left: 150px;
+@media screen and (min-width: 1920px) {
+    
+    article{
+        padding: 0 max(calc(50% - 600px), 24px);
+    } 
+
+    .article-content{
+        padding: 0 max(calc(50% - 600px), 24px);
     }
 
+    #media{
+        padding: 88px max(calc(50% - 445px), 24px);
+    }
+
+}
+
+@media screen and (max-width: 1230px){
     .pro-tipps {
-        margin: 60px 60px;
+        margin: 100px 0 60px 0;
+        padding: 20px 64px;
     }
 }
 
 @media screen and (max-width: 1050px){
     article {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 24px;
+        padding-right: 24px;
     }
     .article-subtitle{
         font-size: 2rem;
@@ -347,30 +358,25 @@ article {
     }
 
     #media {
-        margin-left: 180px;
-        margin-right: 100px;
+        padding: 88px 68px;
     }
 
     #media video {
-        width: 800px;
+        width: 100%;
         height: 420px;
     }
 }
 
 @media screen and (max-width: 900px){
-    #media {
-        margin-left: 300px;
-    }
 
     #media video{
-        margin-right: 100px;
-        width: 700px;
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 800px){
     #media video{
-        width: 650px;
+        width: 100%;
     }
 }
 
@@ -380,21 +386,21 @@ article {
     }
     article {
         grid-template-columns: 1fr;
-        margin-top: 100px;   
+        margin-top: 100px; 
+         gap:var(--spacing-sm);  
     }
 
     .article-header {
-        margin-left: 16px;
-        margin-right: 16px;
+        width: 100%;
+        margin: 0;
         grid-column: 1;
     }
 
     .author-card {
         grid-column: 1;
         grid-row: 2;
-        width: 80%;
-        margin-right: 20px;
-        margin-left: 40px;
+        width: 100%;
+        margin: 0;
         align-self: center;
         justify-self: center;
     }
@@ -437,13 +443,11 @@ article {
 
     #media {
         margin: 24px auto;
-        padding: 0;
     }
 
     #media video {
-        width: 550px;
+        width: 100%;
         height: 320px;
-        margin-top: 24px;
     }
     
     .article-content p {
@@ -467,13 +471,19 @@ article {
         margin-bottom: 24px;
     }
 
-    .pro-tipps-header {
-        left: 25px;
+    .pro-tipps{
+        padding: 20px 64px;
     }
 
     .pro-tipps-list ol li {
         font-size: 16px;
     }
+
+    .share{
+        margin-bottom: 0;
+
+    }
+
     .share p {
         font-size: 18px;
         margin-left: 0;
@@ -495,13 +505,19 @@ article {
 
 @media screen and (max-width: 680px) {
     #media video {
-        width: 450px;
+        width: 100%;
         height: 300px;
         margin-top: 0;
     }
 
     .pro-tipps {
-        margin:  60px 0 0 0;
+        margin: 88px 0 0 0;
+        padding: 20px 42px;
+    }
+
+    .pro-tipps-header{
+        top: -60px;
+        left: -12px;
     }
 
     .share p {
@@ -517,7 +533,6 @@ article {
     .share button {
         top: 20px;
         right: 20px;
-        margin-top: 24px;
     }
 
     .share-arrow {
@@ -527,16 +542,18 @@ article {
 
 @media screen and (max-width: 640px) {
     .author-card {
-        width: 80%;
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 630px) {
     #media video {
-        width: 350px;
+        width: 100%;
         height: 200px;
-        margin-right: 150px;
-        
+    }
+
+    #media{
+        padding: 24px;
     }
 }
 
@@ -549,15 +566,15 @@ article {
 
 @media screen and (max-width: 500px) {
     #media video {
-        margin-right: 200px;
+        margin-right: 0;
     }
 
     #media {
-        margin-left: 70px;
+        margin-left: 0;
     }
 
     .author-card {
-        margin-right: 50px;
+        width: 100%;
     }
 }
 
@@ -572,22 +589,25 @@ article {
 }
 
 @media screen and (max-width: 390px) {
-    #media {
-        margin-left: 100px;
-    }
 
      #media video {
-        width: 280px;
+        width: 100%;
         height: 170px;
      }
 
-     .share {
-        margin: 120px 0 100px 0;
-     }
 
      @media screen and (max-width: 350px){
      .share {
-        margin: 150px 50px 100px 50px;
+        margin: 0px 50px 50px 50px;
+     }
+
+     .article-intro{
+        margin:0;
+     }
+
+     #media video{
+        margin: 0;
+        width: 100%;
      }
      }
 }

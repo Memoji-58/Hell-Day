@@ -18,7 +18,7 @@ article {
     grid-template-columns: 1fr 300px;
     grid-template-rows: auto auto;
     gap: 44px;
-  padding: 0 max(calc(50% - 600px), 24px);
+    padding: 0 max(calc(50% - 600px), 24px);
   
     margin-top: 48px;
    
@@ -100,7 +100,7 @@ article {
 
 .author-card h6 {
     font-size: 18px;
-    gap: 8x;
+    gap: 8px;
     font-weight: 700;
 }
 
@@ -141,7 +141,7 @@ article {
     display: flex;
     justify-content: center;
    
-  padding: 88px max(calc(50% - 445px), 24px);
+    padding: 88px max(calc(50% - 445px), 24px);
 }
 
 .article-content{
@@ -364,9 +364,9 @@ article{
         margin-right: 0;
     }
 
-  #media{
-    padding: 88px 68px;
-  }
+    #media{
+        padding: 88px 68px;
+    }
 
     #media iframe {
         width: 100%;
@@ -375,7 +375,7 @@ article{
     }
 
     #media.media {
-width: 100%;
+        width: 100%;
 
     }
 }
@@ -406,7 +406,7 @@ width: 100%;
 
     .article-header {
         width: 100%;
-      margin: 0;
+        margin: 0;
         grid-column: 1;
     }
 
@@ -414,7 +414,7 @@ width: 100%;
         grid-column: 1;
         grid-row: 2;
         width: 80%;
-       margin: 0;
+        margin: 0;
         align-self: center;
         justify-self: center;
     }
@@ -496,10 +496,10 @@ width: 100%;
         font-size: 16px;
     }
 
-.share{
-margin-bottom: 0;
+    .share{
+        margin-bottom: 0;
 
-}
+    }
 
     .share p {
         font-size: 18px;
@@ -536,11 +536,10 @@ margin-bottom: 0;
         padding: 20px 42px;
     }
 
-.pro-tipps-header{
-
-    top: -60px;
-    left: -12px;
-}
+    .pro-tipps-header{
+        top: -60px;
+        left: -12px;
+    }
 
     .share p {
         position: static;
@@ -576,9 +575,9 @@ margin-bottom: 0;
         
         
     }
-#media{
-    padding: 24px;
-}
+    #media{
+        padding: 24px;
+    }
 
 }
 
