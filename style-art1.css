@@ -5,7 +5,8 @@ article {
     gap: 1rem;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     /*  padding: 2rem; */
 }
 
@@ -392,6 +393,12 @@ h5 {
     .slider_b_element {
         width: 190px;
     }
+    article {
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /*  padding: 2rem; */
+}
 }
 
 @media screen and (max-width: 1050px) {
@@ -687,10 +694,6 @@ margin-top: 80px;
 }
 
 @media screen and (max-width: 680px) {
-
-    .pro-tipps {
-       /*  margin: 60px 16px 0px 16px; */
-    }
 
     .share p {
         position: static;
