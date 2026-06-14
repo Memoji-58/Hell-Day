@@ -640,4 +640,12 @@ article{
      }
 
      
+@media screen and (max-width: 350px){
+     .share {
+        margin: 0px 50px 50px 50px;
+     }
+
+    
+    }
+
 

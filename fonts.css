@@ -101,12 +101,44 @@ li {
     font-size: 24px;
 }
 
-ul  :hover {
-color: var(--color-primary-hover) !important;
+ul a:visited{
+    color: var(--color-primary);
+}
 
+ul>li:nth-child(1) :hover {
+color: var(white) !important;
+background-image: url(./icon/hover.svg);
+background-repeat: no-repeat;
+background-size: 100% 50%;
+background-position: bottom;
+padding: 0 5px 0 0;
 }
 
 
+
+ul>li:nth-child(2) :hover {
+color: var(white) !important;
+background-image: url(./icon/hover2.svg);
+background-repeat: no-repeat;
+background-size: 100% 50%;
+background-position: bottom;
+padding: 0 0 0 0;
+}
+
+
+ul>li:nth-child(3) :hover {
+color: var(white) !important;
+background-image: url(./icon/hover3.svg);
+background-repeat: no-repeat;
+background-size: 100% 50%;
+background-position: bottom;
+padding: 0 0 0 5px;
+}
+
+.nav-main a {
+    color: var(--color-nav);
+    transition: var(--transition-normal);
+}
 
 
 @media screen and (min-width: 769px) and (max-width: 1300px)

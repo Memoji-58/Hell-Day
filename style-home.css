@@ -168,8 +168,12 @@ background-color: var(--color-secondary);
 }
 
 details[open] .arrow {
-transition: ease-in-out 0.3s;
+transition: ease-in-out 0.5s;
 transform: rotate(180deg);
+}
+
+.arrow {
+transition: ease-in-out 0.5s;
 }
 
 
@@ -409,7 +413,7 @@ width: 160px;
 }
 
 .faq-container p {
-    font-size: 10px;
+    font-size: 16px;
 }
 
 .contact {
