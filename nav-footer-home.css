@@ -5,6 +5,7 @@
 .nav-bar {
     padding: 0 max(calc(50% - 720px));
     height: 128px;
+    overflow-x: hidden;
 }
 
 .footer-main {
