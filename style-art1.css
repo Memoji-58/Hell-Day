@@ -126,6 +126,7 @@ h5 {
 
 .slider_b {
     height: 300px;
+    width: 100%;
 
 
     display: flex;
@@ -228,7 +229,7 @@ h5 {
 .article-content ol {
     margin: 0 auto;
     max-width: 1000px;
-    /* padding: 0 1rem 0 3.5rem;*/
+    padding: 0 1rem 0 3.5rem;
     color: #3D3D3D;
 }
 
@@ -240,24 +241,24 @@ h5 {
 }
 
 .article-content .list-outro {
-    margin-top: 32px;
-    margin-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 /*Pro Tipps*/
 .pro-tipps {
     padding: 20px;
     position: relative;
-    margin: 60px auto;
+    margin: 100px auto;
     max-width: 1134px;
-    max-height: 260px;
-    margin-top: 100px;
+   /*  max-height: 260px; */
+    /* margin-top: 100px; */
 }
 
 .pro-tipps-header {
     position: absolute;
     top: -15px;
-    left: -30px;
+   /*  left: -30px; */
     background-color: var(--color-primary);
     color: var(--color-secondary);
     padding: 4px 12px;
@@ -383,7 +384,9 @@ h5 {
 @media screen and (max-width: 1230px) {
 
     .pro-tipps {
-        margin: 60px 40px;
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .slider {
@@ -394,12 +397,13 @@ h5 {
     .slider_b_element {
         width: 190px;
     }
+
     article {
 
-    padding-left: 1rem;
-    padding-right: 1rem;
-    /*  padding: 2rem; */
-}
+        padding-left: 1rem;
+        padding-right: 1rem;
+        /*  padding: 2rem; */
+    }
 }
 
 @media screen and (max-width: 1050px) {
@@ -436,8 +440,8 @@ h5 {
 
 @media screen and (max-width: 768px) and (min-width: 600px) {
     article {
-margin-top: 80px;
-}
+        margin-top: 80px;
+    }
 
 }
 
@@ -505,7 +509,7 @@ margin-top: 80px;
         width: calc(500% / 5);
         height: 100%;
         /* margin: 2rem; */
-        
+
     }
 
     .element_one,
@@ -565,7 +569,7 @@ margin-top: 80px;
 
     article {
         grid-template-columns: 1fr;
-         margin-top: 80px;
+        margin-top: 80px;
     }
 
     .article-header {
@@ -652,13 +656,14 @@ margin-top: 80px;
         font-size: 12px;
     }
 
-    .article-content .list-outro {
+   /*  .article-content .list-outro {
         padding-top: 12px;
         padding-bottom: 24px;
-    }
+    } */
 
     .pro-tipps {
-        margin: 60px 16px;
+        margin: auto;
+        margin-top: 65px;
         /* padding: 0px; */
     }
 
@@ -735,7 +740,7 @@ margin-top: 80px;
 
     @media screen and (max-width: 350px) {
         .share {
-            margin: 150px 50px 100px 50px;
+            margin: 50px;
         }
     }
 }
