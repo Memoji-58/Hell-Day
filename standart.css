@@ -10,3 +10,15 @@ height: 100dvh;
 overflow-x: hidden;
 }
 
+
+/* Impressum */
+
+.impressum {
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+}
+
+.impressum-article {
+    flex:1;
+}
